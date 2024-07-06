@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>文件哈希计算</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <label>
+        1、选择文件
+        <input id="fileInput" type="file" />
+      </label>
+
+      <div>
+        <div id="fileName">文件名:</div>
+        <div id="fileSize">文件大小:</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="wasm-content">
+        <div>WASM计算</div>
+        <div id="logWasm" style="white-space: pre-line;"></div>
+        <div id="wasmResult" class="result"></div>
+      </div>
+      <div class="js-content">
+        <div>JS计算</div>
+        <div id="logJS" style="white-space: pre-line;"></div>
+        <div id="jsResult" class="result"></div>
+      </div>
+    </div>
+    
+  </div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
