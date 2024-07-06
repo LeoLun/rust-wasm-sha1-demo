@@ -53,9 +53,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Build bevy
-        run: pnpm run build:bevy
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
